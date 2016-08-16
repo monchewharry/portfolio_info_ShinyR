@@ -1,0 +1,27 @@
+<!-- Start: Wallstreetcn.com hs widget -->
+<div id="js-wscn-hs-wrapper"></div>
+<script src="http://markets.s.wallstcn.com/embed/hs.js" type='text/javascript'></script>
+
+<script type='text/javascript'>
+(function(){
+
+	// 插入的 iFrame 父节点 
+	var parentId = 'js-wscn-hs-wrapper';
+	// iFrame 的 ID 
+	var iframeId = 'js-wscn-hs-iframe'; 
+
+	var options = /*options*/{
+        "width": 748,
+        "height": 300,
+        "symbol": "XAUUSD",
+        "interval": 5,
+        "chartTheme": "light",
+        "type": "area"
+}/*endOptions*/
+
+	var hs = new WallstreetCN.embed.Hs(parentId, options, iframeId);
+	hs.render();
+
+})();
+</script>
+<!-- End: Wallstreetcn.com hs widget -->
